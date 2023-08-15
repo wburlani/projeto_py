@@ -1,0 +1,50 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <!-- You can add other links here if needed -->
+        </ul>
+
+    </nav>
+<form>
+    <div class="container">
+        <h2>Welcome to Your Dashboard, {{ session['username'] }}</h2>
+    </div>
+
+    <div class="container">
+        <h3>Conversor para PDF</h3>
+        <p>Clique no botão abaixo para converter as imagens em PDF:</p>
+        <form action="/converter" method="post">
+            <button id="converter-btn" class="btn waves-effect waves-light" type="button">Converter para PDF</button>
+        </form>
+    </div>
+</form>
+
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var converterBtn = document.getElementById('converter-btn');
+        converterBtn.addEventListener('click', function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/converter', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert(xhr.responseText);  // Exibir a resposta do servidor (mensagem de sucesso ou erro)
+                }
+            };
+            xhr.send();
+        });
+    });
+    </script>
+</html>

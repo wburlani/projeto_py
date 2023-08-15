@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #00bfff; /* Azul Celeste */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos ao espaço entre eles */
+  align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar li:last-child {
+  margin-right: 0; /* Remove a margem direita do último item */
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #00bfff; /* Azul Celeste */
+  color: white;
+  border: none;
+  padding: 3px 20px;
+  cursor: pointer;
+  font-size: 12px;
+  display: inline-block; /* Alinha corretamente a área de interação do cursor */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+.btn:hover {
+  background-color: #0080ff; /* Azul Mais Escuro ao Passar o Mouse */
+}
+
+.btn2 {
+  background-color: #ff0000; /* Vermelho */
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px; /* Bordas arredondadas */
+  display: block; /* Alterado para block para centralizar horizontalmente */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+.btn2:hover {
+  background-color: #ff814f; /* Laranja mais claro ao passar o mouse */
+}
+
+
