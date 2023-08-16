@@ -1,19 +1,19 @@
-# projeto_py
+# CONVERTER PARA PDF
+Converter diversos documentos de extensão .TIF, .JPEG, .JPG, .PNG para PDF 
 
-Logue no sistema através de uma sessão de autenticação;
+# ARQUIVOS A MODIFICAR:
+em route.py
+C:/workspace/projeto_py/scripts/convertFiles.py
 
+em convertFiles.py
+C:/workspace/projeto_py/input' C:/workspace/projeto_py/output'
 
-Para criar seu acesso atrevés da rota/url: \register
+# ACESSANDO O SISTEMA
+Na rota \register crie um acesso ao sistema que alimetara o banco de dados 
 
-Converter diversos documentos de extensão .TIF, .JPEG, .JPG, .PNG para PDF
-os documentos devem estar na pasta input
+# BANCO DE DADOS DE AUTENTICAÇÃO
+O banco de dados é um json em \data
 
-Modifique as rotas: 
-# Em route.py
-C:/workspace/projeto_py/scripts/convertFiles.py 
-
-# Em convertFiles.py
-C:/workspace/projeto_py/input'
-C:/workspace/projeto_py/output'
-
-
+# DOCUMENTOS PARA CONVERTER
+Inclua os documentos a serem convertidos em \input
+Resultado dos documentos convertidos em \output
